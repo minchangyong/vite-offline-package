@@ -1,15 +1,16 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="open-life-style" @click="handleOpenLifeStyle">打开生活号</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  methods: {
+    handleOpenLifeStyle() {
+      window.location.href = `alipays://platformapi/startapp?appId=10000007&clientVersion=3.7.0.0718&qrcode=${encodeURIComponent('https://lkme.cc/mkD/Z2lfcz5CX')}`
+    }
   }
 }
 </script>
