@@ -9,7 +9,7 @@ export default {
   name: 'App',
   methods: {
     handleOpenLifeStyle() {
-      window.location.href = `alipays://platformapi/startapp?appId=10000007&clientVersion=3.7.0.0718&qrcode=${encodeURIComponent('https://lkme.cc/mkD/Z2lfcz5CX')}`
+      window.location.href = `alipays://platformapi/startapp?appId=10000007&clientVersion=3.7.0.0718&qrcode=${encodeURIComponent('alipays://platformapi/startapp?appId=2021003126669234&page=pages/service/service')}`
     }
   }
 }
